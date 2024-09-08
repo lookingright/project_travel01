@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+
+   
+    <title>Contact Us</title>
+
+    <link href="demo.css" rel="stylesheet" type="text/css">
+
+    <style >
+        
+       
+       /*
+        .banner {
+            background-image:url("images/Russia4b.jpg") ;
+            background-size:cover;
+
+            border-style: solid;
+            border-color: red;
+            border-width: 3px;
+            margin: 15px;
+            width: 98%;
+            height: 900px;
+
+        }
+            */    
+
+        .banner {
+            background-image: url("images/Russia4b.jpg");
+            /*background-size:cover;
+            border-style: solid;
+            border-color: red;
+            border-width: 3px; */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 800px;
+
+        }
+
+
+
+        .contactForm {
+            margin: 10px;
+            border-top: 10px; 
+            border-color:red;
+            padding: 20px;
+            font-size: 20px;
+
+        }
+
+        #go {
+            background-color: rgba(131,223,23,0.48);
+            width: 50px;
+            height: 35px;
+            display: block;
+            position: fixed;
+            right: 10px;
+            bottom: 20px;
+            font-weight: bold;
+            padding: 1px;
+            font-size: x-large;
+            border-radius: 74px;
+        }
+               
+        </style>
+
+</head>
+<body>
+
+    </nav>
+
+    <nav class="navbar navbar-expand-sm navbar-dark mb-3 navbar-primary bg-dark">
+      <div class="container">  <!--div fill all theleft/right  margin space, otherwise Nav leave some space -->
+          <a class="navbar-band" href="images/logo.globe2.jpg"><img src="images/logo.globe.jpg" width="40px"></src></a>
+          <ul class="navbar-nav text-white"  >
+              <li class="nav-item">
+                  <a class="nav-link" href="./Index.html" style="color:white">Home</a>
+              </li>
+              
+              <li class="nav-item dropdown">  <!-- mix 2 classes nav-item & dropdown -->
+                <a href="#" class="nav-link dropdow-toggle"
+                data-toggle="dropdown" style="color:white" >Africa
+                </a> 
+                <div class="dropdown-menu">
+                 <a href="./Egypt.html" class="dropdown-item">Egypt</a>                           
+                </div>
+
+              </li>
+
+              <li class="nav-item dropdown">  <!-- mix 2 classes nav-item & dropdown -->
+                  <a href="#" class="nav-link dropdow-toggle"
+                      data-toggle="dropdown" style="color:white" >Asia
+                  </a> 
+                  <div class="dropdown-menu">
+                      <a href="./India.html" class="dropdown-item">India</a>                           
+                  </div>
+
+              </li>
+              
+              
+              <li class="nav-item dropdown">  <!-- mix 2 classes nav-item & dropdown -->
+                     <a href="#" class="nav-link dropdow-toggle"
+                     data-toggle="dropdown" style="color:white">Europe
+                     </a> 
+                     <div class="dropdown-menu">
+                      <a href="./Greece.html" class="dropdown-item">Greece</a>                           
+                      <a href="./Russia.html" class="dropdown-item">Russia</a>   
+                     </div>
+
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="nav#" style="color:white">Contact Us</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+
+    <div class="banner">
+        
+
+        <h1 id="TOPTOP"></h1>
+        
+    </div>
+
+    <div class="contactForm">
+    
+    <form id="contactForm" >
+        <h2>Contact Us</h2>
+        <br>
+        <h4>Let us know what you like and comment.</h4>
+        
+        <h4>It will help us to serve you better to provide more interesting travel information</h4>
+        <br>
+        <hr>
+        <label for="contactName">Name: </label>
+        <input id="contactName" name="contactName" placeholder="e.g. Chan Tai Man" pattern="[a-z A-Z]+" maxlength="30" required>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" maxlength="40" placeholder="e.g. abc@email.com" required>
+        <br>
+        <label for="telephone">Telephone: </label>
+        <input type="telephone" id="telephone" name="telephone" maxlength="8" placeholder="e.g. numbers" required>
+        <br>
+        <br>
+        <label for="tick">Which region you like to travel</label>
+        <br>
+        <input type="checkbox" id="tick" name="tick" value="ticked" >Africa
+        <input type="checkbox" id="tick" name="tick" value="ticked" >Asia
+        <input type="checkbox" id="tick" name="tick" value="ticked" >Europe
+        <br>
+        <br>
+        <label for="dropdown">Which country you like to travel</label> 
+        <br>           
+        <select id="dropdown" name="dropdown">
+        <option>Select one</option>
+        <optgroup label="country">
+            <option value="cat">Egypt</option>
+            <option value="dog">India</option>
+            <option value="fish">Greece</option>
+            <option value="fish">Russia</option>
+        </optgroup>
+        </select>
+        <br>
+        <br>
+        <label for="subject">Comment</label><br>
+        <textarea id="subject" name="subject" placeholder="Your comment.." rows="10" cols="30" required></textarea>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <br>
+
+    </div>
+
+
+    <hr>
+
+    <div id="go">
+        <a href="#TOPTOP">TOP</a>
+    </div>
+
+    <footer>
+        <!-- copyright -->
+        <br>
+        <div style="text-align: center;">© 2024 Copyright:All right reserved</div>
+        <br>
+    </footer>
+  
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script>
+    $('.carousel').carousel({
+      interval: 3000,
+      keyboard: true,
+      pause: 'hover',
+      wrap: true
+    });
+
+    $('#slider4').on('slide.bs.carousel', function () {
+      console.log('SLIDE!');
+    });
+
+    $('#slider4').on('slid.bs.carousel', function () {
+      console.log('SLID!');
+    });
+
+  </script>
+
+
+
+</body>
+
+</html>

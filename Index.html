@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+
+   
+    <title>Index</title>
+
+    <link href="demo.css" rel="stylesheet" type="text/css">
+
+    <style >
+        
+        .banner {
+            background-image: url("images/Egy3b.jpg");
+            /*background-size:cover;
+            border-style: solid;
+            border-color: red;
+            border-width: 3px; */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 600px;
+
+        }
+             
+        .lightblue { 
+             /*background-color: lightblue;*/
+            background-image: linear-gradient(45deg,rgb(253, 63, 63), yellow, rgb(94, 173, 94), rgb(130, 130, 252)); 
+		        opacity: 1; 
+
+        /*  width: 50%; */ 
+            height: 120px;
+            width: 100%;
+        /*  overflow: auto; */
+        /*  overflow:hidden   */
+        /*  overflow:visible  */
+        /*  overflow:scroll  */ 
+            padding: 15px;
+        } 
+
+        .table {
+          /*margin: 5px;*/
+            padding: 10px;
+        }
+
+        button:link, button:visited {
+	        background-color: lightblue;
+	        color: black;
+	        padding: 14px 10px; 
+	        text-align: center;
+	        text-decoration: none;
+	        font-size: 1.875rem;
+	        margin: 10px;
+          border-radius: 20px;
+	      /* display:inline-block; */  
+	       }
+
+	      button:hover, button:active {
+	        background-color: rgba(30, 248, 1, 0.904);
+	        /* cursor:help; */
+	      }
+
+        .roundcorner {
+          border-radius: 15px;;
+
+        }
+
+         #go {
+            background-color: rgba(131,223,23,0.48);
+            width: 50px;
+            height: 35px;
+            display: block;
+            position: fixed;
+            right: 10px;
+            bottom: 5px;
+            font-weight: bold;
+            padding: 1px;
+            font-size: x-large;
+            border-radius: 74px;
+        }
+               
+        </style>
+
+</head>
+<body>
+
+    </nav>
+
+    <nav class="navbar navbar-expand-sm navbar-light mb-3 navbar-primary bg-info">
+      <div class="container">  <!--div fill all theleft/right  margin space, otherwise Nav leave some space -->
+          <a class="navbar-band" href="images/logo.globe2.jpg"><img src="images/logo.globe.jpg" width="40px"></src></a>
+          <ul class="navbar-nav  text-white"  >
+              <li class="nav-item">
+                  <a class="nav-link" href="./Index.html" style="color:white">Home</a>
+              </li>
+              
+              <li class="nav-item dropdown">  <!-- mix 2 classes nav-item & dropdown -->
+                <a href="#" class="nav-link dropdow-toggle"
+                data-toggle="dropdown" style="color: white">Africa
+                </a> 
+                <div class="dropdown-menu">
+                 <a href="./Egypt.html" class="dropdown-item">Egypt</a>                           
+                </div>
+
+              </li>
+
+         <li class="nav-item dropdown">  <!-- mix 2 classes nav-item & dropdown -->
+          <a href="#" class="nav-link dropdow-toggle"
+          data-toggle="dropdown" style="color: white">Asia
+          </a> 
+          <div class="dropdown-menu">
+           <a href="./India.html" class="dropdown-item">India</a>                           
+          </div>
+
+        </li>
+              
+              <li class="nav-item dropdown">  <!-- mix 2 classes nav-item & dropdown -->
+                     <a href="#" class="nav-link dropdow-toggle"
+                     data-toggle="dropdown" style="color: white">Europe
+                     </a> 
+                     <div class="dropdown-menu">
+                      <a href="./Greece.html" class="dropdown-item">Greece</a>                           
+                      <a href="./Russia.html" class="dropdown-item">Russia</a>   
+                     </div>
+
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./ContactUs.html" style="color: white">Contact Us</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+  <div class="row">
+    <div class="col" style="text-align: center;">
+
+        <div class="banner">
+        
+            <h1 id="TOPTOP"></h1>
+        
+            <br>
+
+            <h1>What a Wonderful World!</h1>
+            <!--<img src="./Egy1.jpg" width="10%" />
+            -->
+
+        </div>
+    </div>
+  </div>
+
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-8 m-auto">
+    
+            <!-- SLIDER WITH CAPTIONS -->
+            <div id="slider4" class="carousel slide mb-5" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#slider4" data-slide-to="0"></li>
+                  <li data-target="#slider4" data-slide-to="1"></li>
+                  <li data-target="#slider4" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="images/India4b.jpg" width="100%" height="400" alt="First Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>India</h3>
+                      <p> </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="images/Russia3b.jpg" width="100%" height="400" alt="Second Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Russia</h3>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="images/Greece3.jpg" width="100%" height="400" alt="Third Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Greece</h3>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="images/Egy7b.jpg" width="100%" height="400" alt="Four Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Egypt</h3>
+                      <p></p>
+                    </div>
+                  </div>
+
+                </div>
+      
+                <!-- CONTROLS -->
+                <a href="#slider4" class="carousel-control-prev" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+      
+                <a href="#slider4" class="carousel-control-next" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+            </div>
+    </div>
+  </div>
+
+    <div class="lightblue">
+
+        <h2 class="text-sm-left">Expore it Once in a life time...</h2>
+        <h2 class="text-sm-right">...even you may not be here again !</h2>
+<!--
+<p class="text-sm-right">Right aligned on small or larger 1</p>
+<p class="text-sm-left">Left aligned on medium or larger 5</p>
+       -->
+
+    </div> 
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="col" style="text-align: center;">
+
+    
+    
+        
+            <img src="images/India3b.jpg" alt="India" width="600" height="450"  title="India" />
+            <br>
+            <br>
+
+            <button class="roundcorner" id="" name="India" value="India">
+              <a href="India.html" target="_blank">India</a>
+            </button>
+            <br>
+            <br>
+      </div>
+      
+      <div class="col" style="text-align: center;">
+
+           <img src="images/Egy1b.jpg" alt="Egypt" width="600" height="450" title="Egypt"/>
+            <br>
+            <br>
+           <button class="roundcorner" id="" name="Egypt" value="Egypt">
+            <a href="Egypt.html" target="_blank">Egypt</a>
+            </button>
+            <br>
+            <br>
+      </div>  
+    </div>
+        
+           <!-- Checkout button -->
+
+    <div class="row">
+          <div class="col" style="text-align: center;">
+  
+            <img src="images/Greece1b.jpg" alt="Greece" width="600" height="450" title="Greece"/>
+             <br>
+            <br>
+            <button class="roundcorner" id="" name="greece" value="greece">
+              <a href="Greece.html" target="_blank">Greece</a>
+            </button>
+          </div>  
+     
+           
+          <div class="col" style="text-align: center;">
+            <img src="images/Russia1b.jpg" alt="Russia" width="600" height="450" title="Russia"/>
+            <br>
+            <br>
+            <button class="roundcorner" id="" name="Russia" value="Russia">
+              <a href="Russia.html" target="_blank">Russia</a>
+            </button>
+            <br>
+            <br>
+          </div>  
+    </div>
+
+    <div id="go">
+        <a href="#TOPTOP">TOP</a>
+    </div>
+
+    <footer>
+        <!-- copyright -->
+        <div style="text-align: center;">Updated: 2024-09-09</div>
+        <br>
+        <div style="text-align: center;">© 2024 Copyright:All right reserved</div>
+        <br>
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script>
+    $('.carousel').carousel({
+      interval: 3000,
+      keyboard: true,
+      pause: 'hover',
+      wrap: true
+    });
+
+    $('#slider4').on('slide.bs.carousel', function () {
+      console.log('SLIDE!');
+    });
+
+    $('#slider4').on('slid.bs.carousel', function () {
+      console.log('SLID!');
+    });
+
+  </script>
+
+
+</body>
+
+</html>

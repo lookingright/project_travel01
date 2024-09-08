@@ -1,0 +1,360 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous">
+
+
+<style>
+.item1 { grid-area: header;
+         background-color: rgb(172, 210, 241); }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+#I001 { background-color: rgb(172, 210,241);
+        /*background-image:url(./Egypt/Egy4.jpg) ; */
+        /* <img src="images/Egy2.jpg" width="80%"> */
+        background-image: "images/Egy2.jpg" width="100%";
+        margin:0%;
+        width: 100%;
+        height: 30%;
+    }
+
+.lightblue {
+        background-color: lightblue;
+        /* height: 120px; */
+        /* width: 50%; */ 
+        height: 100px;
+        width: 100%vw;
+        text-align: center;
+        padding: 15px;
+        /* overflow: auto; */
+        /* overflow:hidden   */
+        /* overflow:visible  */
+        /* overflow:scroll  */ 
+    }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(75px, auto);
+  grid-template-areas:
+    'header header header header header header'
+    'header header header header header header'
+    'header header header header header header'
+
+    'menu main main main right right'
+    'menu main main main right right'
+	  'menu main main main right right'
+	  'footer footer footer footer footer footer';
+    
+  gap: 2px;
+  background-color: rgb(114, 148, 241);
+  /*padding: 10px;*/
+  border: 0px;
+  
+    }
+
+.grid-container > div {
+  background-color: rgba(235, 152, 237, 0.914);
+  /*text-align: center; */
+  /*padding: 10px ;*/
+  font-size: 20px;
+
+}
+
+.info {
+        margin: 5px;
+        padding:10px;
+        text-align: left;
+}
+
+.orange{
+		background-color: rgb(238, 200, 129);
+		/* height:60px; */
+		width:95%;
+		/* border-style: solid; */
+	  /* border-style: dotted solid; */
+	  /*	border-color:rgb(137,169,255); */
+		border-width:5px;
+    margin: 15px ;
+    border-radius: 15px;
+    text-align: justify;
+    padding: 10px;
+    
+	}
+
+
+  .img {
+    margin: 20px;
+    /*margin-bottom: 0px;;
+    vertical-align: center; */
+    width: 80%;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(129, 97, 97);
+    text-align: justify;
+    padding: 10px;
+
+  }
+
+  #go {
+            background-color: rgba(131,223,23,0.48);
+            width: 50px;
+            height: 35px;
+            display: block;
+            position: fixed;
+            right: 10px;
+            bottom: 20px;
+            font-weight: bold;
+            padding: 2px;
+            font-size: x-large;
+            border-radius: 74px;
+        }
+
+</style>
+<title>Egypt</title>
+</head>
+<body>
+
+	
+
+      <!-- NAVBAR WITH DROPDOWN -->
+
+      <nav class="navbar navbar-expand-sm navbar-dark mb-3 navbar-primary bg-dark">
+        <div class="container">  <!--div fill all theleft/right  margin space, otherwise Nav leave some space -->
+            <a class="navbar-band" href="images/logo.globe2.jpg"><img src="images/logo.globe.jpg" width="40px"></src></a>
+            <ul class="navbar-nav text-white"  >
+                <li class="nav-item">
+                    <a class="nav-link" href="./Index.html" style="color:white">Home</a>
+                </li>
+                
+                <li class="nav-item dropdown">  <!-- mix 2 classes nav-item & dropdown -->
+                  <a href="#" class="nav-link dropdow-toggle"
+                  data-toggle="dropdown" style="color:white">Africa
+                  </a> 
+                  <div class="dropdown-menu">
+                   <a href="./Egypt.html" class="dropdown-item">Egypt</a>                           
+                  </div>
+
+                </li>
+
+                <li class="nav-item dropdown">  <!-- mix 2 classes nav-item & dropdown -->
+                    <a href="#" class="nav-link dropdow-toggle"
+                        data-toggle="dropdown" style="color:white">Asia
+                    </a> 
+                    <div class="dropdown-menu">
+                          <a href="./India.html" class="dropdown-item">India</a>                           
+                    </div>
+
+                </li>
+                
+                <li class="nav-item dropdown">  <!-- mix 2 classes nav-item & dropdown -->
+                       <a href="#" class="nav-link dropdow-toggle"
+                       data-toggle="dropdown" style="color:white">Europe
+                       </a> 
+                       <div class="dropdown-menu">
+                        <a href="./Greece.html" class="dropdown-item">Greece</a>                           
+                        <a href="./Russia.html" class="dropdown-item">Russia</a>   
+                       </div>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./ContactUs.html" style="color:white">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="lightblue">
+
+      <h1 id="TOPTOP" >埃及</h1>
+
+    </div>
+
+	
+	<div class="grid-container">
+
+	  <div class="item1" id="I001">
+      <img src="images/Egy4b.jpg" width="100%">
+
+    </div>
+
+	  <div class="item2" text-align: left>
+        <br>
+
+        <div class="info"> 
+          <h2 font-weight: bold>旅行小資訊</h2>
+          <br>
+          <a href="#history"><h3>歷史文化</h3></a>
+          <a href="#weather"><h3>天氣</h3></a>
+          <a href="#transportation"><h3>交通工具</h3></a>
+          <a href="#attractions"><h3>觀光景點</h3></a>
+          <a href="#thingstodo"><h3>活動</h3></a>
+
+        </div>
+    </div>
+
+	  <div class="item3">
+        
+        <div class="orange">
+
+          <H3 id="history" >歷史文化</H3>
+
+          <p>飛越五千年之旅</p>
+
+          <ul>
+            <li>埃及是四大文明古國之一, 分為遠古時代 (約3000 - 340 BC) 共31個王朝; 金字塔是這時興建的 ;</li>
+            <li>希臘統治年代(340 - 30 BC), 阿歷山大帝興建第二大城阿歷山卓城; </li>
+            <li>羅馬帝國統治年代 (30BC - 600AD); </li>
+            <li>阿拉伯年代 (600 - 1517 ); </li>
+            <li>土耳其奧圖曼帝國(1517 - 1882); </li>
+            <li>英國統治年代 (1882 - 1952 ); </li>
+            <li>1952年 脫離英國獨立; </li>
+          </ul>
+
+        
+        </div>
+
+        <div class="orange">
+          <h3 id="weather">天氣</h3>
+          <p>
+            埃及五月至十月夏季炎熱, 從十一月到四月, 冬季溫和。 
+            <br>
+            沙漠中夏季氣溫, 白天最高溫度可達 43°C (109°F), 
+            <br>
+            夜間溫度至 7°C (45°F),
+            <br> 
+            冬季溫度範圍為18°C (64°F) 至 0°C (32°F)。
+
+          </p>
+
+        </div>
+
+        <div class="orange">
+
+          <h3 id="transportation">交通工具</h3>
+
+          <ul>
+            <li>尼羅河上的郵輪</li>
+            <li>沙漠上的四驅車</li>
+            <li>沙漠上的駱駝  </li>
+            <li>從亞斯旺去開羅可坐12小時及夜宿於火車 </li>
+            <li>亦可乘坐內陸機 </li>
+
+          </ul>
+            
+        </div>
+
+        <div class="orange">
+
+          <h3 id="attractions">觀光景點</h3>
+
+            <ul>
+                <li>
+                  尼羅河的西岸有帝王谷 , 發現有60 多個王陵, 屬十八王朝至二十王朝 (1550 - 1070 BC), 
+                  其中包括 拉美西斯二世 (Ramesses II), 圖坦卡門(Tutankhamun)等
+                </li>
+
+                <li>
+                  在樂蜀(Luxor), 古埃及人相信東面掌生, 西面代表死後世界, 
+                  故東岸有樂蜀神殿, 喀納克神殿, 左面有帝王谷(Valley of the Kings)和女王神殿
+                </li>
+
+                <li>
+                  艾夫神殿 (Temple of Edfu ), 鷹神殿 (Temple of Horus) , 高安堡 (Temple of Kom Ombo) 
+                </li>
+
+                <li>
+                  哈姬蘇女王神殿 (Temple of Hatshepsut ), 埃及唯一的女法老
+                </li>
+
+                <li>
+                  在亞斯旺( Aswan)的亞布辛貝神廟 (Abu Simbel) , 拉美西斯二世在 1290 - 1224 BC 建造.
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="orange">
+          <h3 id="thingstodo">活動</h3>
+
+          <ol>
+            <li>參觀金字塔, 世界七大奇蹟之一, 現仍存於世上的古代文明</li>
+            <li>坐四驅車疾馳撒哈拉沙漠 (Sahara Desert)</li>
+            <li>郵輪暢遊 尼羅河 (River Nile)</li>
+            <li>坐熱氣球在尼羅河上空看日出</li>
+            <li>亦可在尼羅河上看日落</li>
+  
+          </ol>
+        </div> 
+
+    </div>       
+    
+	  <div class="item4" >
+        
+          <div class="img" >
+            <a href="images/Egy9a.jpg">
+              <img src="images/Egy9b.jpg" width="100%">
+            </a><p>Luxor(樂蜀)的艾夫神殿Temple of Edfu. 本來是两支方尖碑, 
+              一枝在拿破倫入埃及時運回法國, 現在協和廣場</p>
+
+          </div>
+
+          <br>
+        
+          <div class="img" >
+              <a href="images/Egy5a.jpg">
+              <img src="images/Egy5.jpg"  width="100%">
+              </a>
+              <p>在1800呎高空坐熱氣球看着尼羅河兩岸的歷史流逝</p>
+
+          </div>
+
+          <br>
+
+          <div class="img" >
+              <a href="images/Egy8a.jpg">
+                <img src="images/Egy8b.jpg" width="100%">
+              </a>
+              <p>四驅車疾馳於茫茫大漠 </p>
+
+          </div>
+
+          <br>
+
+          <div class="img" >
+              <a href="images/Egy6a.jpg">
+                <img src="images/Egy6b.jpg" width="100%">
+              </a>
+              <p>郵輪暢遊尼羅河</p>
+
+          </div>
+
+        <div id="go">
+            <a href="#TOPTOP">TOP</a>
+        </div>
+      
+    </div>
+
+	  <div class="item5" style="text-align: center;" >
+
+      <p>© 2024 Copyright:All right reserved</p>
+
+    </div>
+	</div>
+	
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

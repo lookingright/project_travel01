@@ -1,0 +1,393 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous">
+
+
+<style>
+  .item1 { grid-area: header;
+            background-color: rgb(172, 210, 241); }
+  .item2 { grid-area: menu; }
+  .item3 { grid-area: main; }
+  .item4 { grid-area: right; }
+  .item6 { grid-area: main2; }
+  .item5 { grid-area: footer; }
+
+
+  #I001 { background-color: rgb(172, 210,241);
+        /*background-image:url(./Egypt/Egy4.jpg) ; */
+        /* <img src="images/Egy2.jpg" width="80%"> */
+        background-image: "images/Egy2.jpg" width="100%";
+        margin:0%;
+        width: 100%;
+        height: 30%;
+}
+
+  .lightblue {
+        background-color: lightblue;
+        /* height: 120px; */
+        /* width: 50%; */ 
+        height: 100px;
+        width: 100%vw;
+        text-align: center;
+        padding: 15px;
+        /* overflow: auto; */
+        /* overflow:hidden   */
+        /* overflow:visible  */
+        /* overflow:scroll  */ 
+    }
+
+
+
+  .grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(75px, auto);
+  grid-template-areas:
+    'header header header header header header'
+    'header header header header header header'
+    'header header header header header header'
+
+    'menu main main main right right'
+    'menu main main main right right'
+	  'menu main main main right right'
+	  'footer footer footer footer footer footer';
+    
+  gap: 2px;
+  background-color: rgb(114, 148, 241);
+  /*padding: 10px;*/
+  border: 0px;
+  
+  }
+
+  .grid-container > div {
+  background-color: rgba(235, 152, 237, 0.914);
+  /*text-align: center; */
+  /*padding: 10px ;*/
+  font-size: 20px;
+
+  }
+
+  .info {
+        margin: 5px;
+        padding:10px;
+        text-align: left;
+  }
+
+  .orange{
+		background-color: rgb(238, 200, 129);
+		/* height:60px; */
+		width:95%;
+		/* border-style: solid; */
+	  /* border-style: dotted solid; */
+	  /*	border-color:rgb(137,169,255); */
+		border-width:5px;
+    margin: 15px ;
+    border-radius: 15px;
+    text-align: justify;
+    padding: 10px;
+    
+	}
+
+  .img {
+    margin: 20px;
+    /*margin-bottom: 0px;;
+    vertical-align: center; */
+    width: 80%;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(129, 97, 97);
+    text-align: justify;
+    padding: 10px;
+
+  }
+
+  .map{
+
+    padding:10px;
+    width:95%;
+    margin:15px;
+
+  }
+
+
+  #go {
+            background-color: rgba(131,223,23,0.48);
+            width: 50px;
+            height: 35px;
+            display: block;
+            position: fixed;
+            right: 10px;
+            bottom: 20px;
+            font-weight: bold;
+            padding: 2px;
+            font-size: x-large;
+            border-radius: 74px;
+        }
+
+</style>
+<title>Greece</title>
+</head>
+<body>
+
+
+      <!-- NAVBAR WITH DROPDOWN -->
+
+      <nav class="navbar navbar-expand-sm navbar-dark mb-3 navbar-primary bg-dark">
+        <div class="container">  <!--div fill all theleft/right  margin space, otherwise Nav leave some space -->
+            <a class="navbar-band" href="images/logo.globe2.jpg"><img src="images/logo.globe.jpg" width="40px"></src></a>
+            <ul class="navbar-nav text-white"  >
+                <li class="nav-item">
+                    <a class="nav-link" href="./Index.html" style="color:white" >Home</a>
+                </li>
+                
+                <li class="nav-item dropdown">  <!-- mix 2 classes nav-item & dropdown -->
+                  <a href="#" class="nav-link dropdow-toggle"
+                  data-toggle="dropdown" style="color:white" >Africa
+                  </a> 
+                  <div class="dropdown-menu">
+                   <a href="./Egypt.html" class="dropdown-item">Egypt</a>                           
+                  </div>
+
+           </li>
+
+           <li class="nav-item dropdown">  <!-- mix 2 classes nav-item & dropdown -->
+            <a href="#" class="nav-link dropdow-toggle"
+            data-toggle="dropdown" style="color:white">Asia
+            </a> 
+            <div class="dropdown-menu">
+             <a href="./India.html" class="dropdown-item">India</a>                           
+            </div>
+
+            </li>
+                
+                
+              <li class="nav-item dropdown">  <!-- mix 2 classes nav-item & dropdown -->
+                       <a href="#" class="nav-link dropdow-toggle"
+                       data-toggle="dropdown" style="color:white">Europe
+                       </a> 
+                       <div class="dropdown-menu">
+                        <a href="./Greece.html" class="dropdown-item">Greece</a>                           
+                        <a href="./Russia.html" class="dropdown-item">Russia</a>   
+                       </div>
+
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./ContactUs.html" style="color:white">Contact Us</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="lightblue">
+
+      <h1 id="TOPTOP" >希臘</h1>
+
+    </div>
+
+	
+	<div class="grid-container">
+
+	  <div class="item1" id="I001">
+      <img src="images/Greece2b.jpg" width="100%">
+
+
+    </div>
+
+	  <div class="item2" text-align: left>
+        <br>
+
+        <div class="info"> 
+          <h2 font-weight: bold>旅行小資訊</h2>
+          <br>
+          <a href="#history"><h3>歷史文化</h3></a>
+          <a href="#weather"><h3>天氣</h3></a>
+          <a href="#transportation"><h3>交通工具</h3></a>
+          <a href="#attractions"><h3>觀光景點</h3></a>
+          <a href="#thingstodo"><h3>活動</h3></a>
+          <a href="#gourmentfood"><h3>地道美食</h3></a>
+
+        </div>
+    </div>
+
+	  <div class="item3">
+        
+        <div class="orange">
+
+          <H3 id="history" >歷史文化</H3>
+
+          <ul>
+            <li>2200BC, 以愛琴海Aegean Sea克里特島 (Crete)上米諾安文明為主, 至1500BC被特大火山爆發及地震所毁
+                1450BC, 希臘為邁錫尼文明所支配. </li>
+            <li>公元前8- 6世纪, 希臘城邦興起, 被稱為”荷馬時期”, 文化以神話及史詩為主.</li>
+            <li>公元前6- 4 世纪, 為希臘古典時期, 社會政治藝術達至顛峰. </li>
+            <li>公元前4世纪, 馬其頓亞歷山大帝崛起. 公元前146年希臘成為羅馬省份.</li>
+            <li>公元529 - 1200 年 為拜占庭東羅馬時期.</li>
+            <li>1210年 為威尼斯人統治 1450年為土耳其鄂圖曼佔領. </li>
+            <li>1821 年希臘獨立, 進入近代史.</li>
+            <li>希臘人稱自己國家為 Hella, 譯音希臘也來自此古名. Greece 是羅馬統治時的名稱.</li>
+            <li>古神話中智慧之神雅典娜與海神波賽頓 (Poseidon), 競爭成為這城市的守護神. 
+                最後由雅典娜種下欖橄樹代表和平與繁榮而勝出, 使這千年城市屬於”雅典娜”.</li>
+
+          </ul>
+
+        </div>
+
+        <div class="orange">
+          <H3 id="weather">天氣</H3>
+          <p>
+
+            這裡的藍與白,海天一色, 真是令人畢生難忘, 尤如夢幻般世界 
+            小島氣候温和, 陽光雖熾熱, 强風吹亂頭髮, 但卻沒半點汗水
+            
+          </p>
+
+        </div>
+
+        <div class="orange">
+
+          <H3 id="transportation">交通工具</H3>
+
+          <ul>        
+            <li>由雅典西南Piraeus港乘船約4小時去聖陶維尼島(Santorini) </li>
+            <li>再乘船約3小時去米克諾斯島 (Mykonos), 乘船約3小時回雅典</li>
+            <li>在島上乘巴士很方便, 每程約Euro 1.6.</li>
+            <li>可乘吊車下山往舊港, 亦可騎驢子 </li>
+
+          </ul>
+
+        </div>
+
+        <div class="orange">
+
+          <h3 id="attractions">觀光景點</h3>
+
+          <ul> 
+            <li>聖陶維尼島, 可以說是愛琴海上最美麗的小島. 是夢境. 是神話. 
+                小島的全貌: 城府費拉Fira 在島中間, Oia伊亞在西北面, 夕陽聞名於世. 
+                一個藍色圓頂白教堂, 面對火山島, 是經典的明信片取景的地方.
+                西南是亞克羅提尼Akrotiri及紅海灘 Red Beach. 東面是著名的黑沙灘 Kamari</li>      
+            <li>米克諾斯島 Mykonos, 小威尼斯區的露天茶座就在海旁, 
+                面對五座風車, 景色優美   </li>
+            <li>在島上, 湛藍的天空, 隨處可見這些藍色圓頂白教堂, 房子顏色多是藍與白, 
+                很像希臘國旗, 灰色石塊小路, 一幅特色的圖畫</li>
+            <li>雅典巴特儂神殿 Parthenon</li>
+            <li>Erechtheion少女廊柱的伊瑞克提翁神殿, 在 巴特儂神殿北面</li>
+
+          </ul>
+
+        </div>
+
+        <div class="orange">
+          <h3 id="thingstodo">活動</h3>
+
+          <ol>
+            <li>聖陶維尼島上的日落愛琴海
+                伊亞被譽為世界最美的夕陽, 聞名於世</li>
+            <li>島上除了很多手工藝店, 紀念品, 餐廳, 咖啡店, 
+                還有很多Art gallery 畫廊, 很有藝術氣紛  </li>
+            <li>在愛琴海的小島上, 每到黄昏, 觀賞夕陽總是必選節目之一</li>
+  
+          </ol>
+
+        </div> 
+
+        <div class="orange">
+          <h3 id="gourmentfood" >地道美食</h3>
+
+            <p>  
+                Gyros 烤串羊肉及雞肉, 
+                切下來夾在簿餅內吃 
+            </p>
+
+        </div>
+
+        <div class="map">
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1367434.843863371!2d23.76308818422917!3d37.245332687135424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1499cb8b1c44c1a9%3A0x400bd2ce2b9c750!2zODQ3IDAy5biM6IeY5LyK5Lqe!5e0!3m2!1szh-TW!2shk!4v1723297145686!5m2!1szh-TW!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  
+          <h4>Youtube</h4>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/C5EYJxsWbZA" title="Santorini Sunset Time Lapse"  
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+  
+        </div>
+
+    </div>       
+    
+	  <div class="item4" >
+
+          <div class="img" >
+            <a href="images/Greece4a.jpg">
+            <img src="images/Greece4.jpg" width="100%">
+            </a>
+            <p>聖陶維尼島Santorini上的日落愛琴海, 是National Geography Travelers 
+              “國家地理旅人” 推薦50 個人生必遊地之一.
+            </p>
+
+          </div>
+
+          <br>
+        
+          <div class="img" >
+            <a href="images/Greece5a.jpg">
+            <img src="images/Greece5b.jpg"  width="100%">
+            </a>
+            <p>米克諾斯島 Mykonos, 小威尼斯區的露天茶座就在海旁, 
+              面對五座風車, 景色優美
+            </p>
+
+          </div>
+
+          <br>
+        
+          <div class="img" >
+              <a href="images/Greece8a.jpg">
+              <img src="images/Greece8b.jpg" width="100%">
+              </a>
+              <p>巴特儂神殿 Parthenon, 建於公元前 447 - 432 年, 為了獻給雅典的守護神雅典娜女神而興建
+              </p>
+
+          </div>
+
+          <br>
+
+          <div class="img" >
+              <a href="images/Greece9a.jpg">
+              <img src="images/Greece9b.jpg" width="100%">
+              </a>
+              <p>路旁買Gyros的小食店, 在旋轉烤爐的一串羊肉及雞肉, 
+                一片片切下來夾在簿餅內吃 </p>
+
+          </div>
+
+    </div> 
+        
+       
+        <div id="go">
+          <a href="#TOPTOP">TOP</a>
+        </div>
+      
+
+	  <div class="item5" style="text-align: center;" >
+
+      <p>© 2024 Copyright:All right reserved</p>
+
+    </div>
+	</div>
+	
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>

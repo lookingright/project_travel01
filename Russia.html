@@ -1,0 +1,342 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous">
+
+
+<style>
+.item1 { grid-area: header;
+         background-color: rgb(172, 210, 241); }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+
+#I001 { background-color: rgb(172, 210,241);
+        /*background-image:url(./Egypt/Egy4.jpg) ; */
+        /* <img src="images/Egy2.jpg" width="80%"> */
+        background-image: "images/Egy2.jpg" width="100%";
+        margin:0%;
+        width: 100%;
+        height: 30%;
+}
+
+.lightblue {
+        background-color: lightblue;
+        /* height: 120px; */
+        /* width: 50%; */ 
+        height: 100px;
+        width: 100%vw;
+        text-align: center;
+        padding: 15px;
+        /* overflow: auto; */
+        /* overflow:hidden   */
+        /* overflow:visible  */
+        /* overflow:scroll  */ 
+    }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(75px, auto);
+  grid-template-areas:
+    'header header header header header header'
+    'header header header header header header'
+    'header header header header header header'
+
+    'menu main main main right right'
+    'menu main main main right right'
+	  'menu main main main right right'
+	  'footer footer footer footer footer footer';
+    
+  gap: 2px;
+  background-color: rgb(114, 148, 241);
+  /*padding: 10px;*/
+  border: 0px;
+  
+}
+
+.grid-container > div {
+  background-color: rgba(235, 152, 237, 0.914);
+  /*text-align: center; */
+  /*padding: 10px ;*/
+  font-size: 20px;
+
+}
+
+.info {
+        margin: 5px;
+        padding:10px;
+        text-align: left;
+}
+
+.orange{
+		background-color: rgb(238, 200, 129);
+		/* height:60px; */
+		width:95%;
+		/* border-style: solid; */
+	  /* border-style: dotted solid; */
+	  /*	border-color:rgb(137,169,255); */
+		border-width:5px;
+    margin: 15px ;
+    border-radius: 15px;
+    text-align: justify;
+    padding: 10px;
+    
+	}
+
+  .img {
+    margin: 20px;
+    /*margin-bottom: 0px;;
+    vertical-align: center; */
+    width: 80%;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(129, 97, 97);
+    text-align: justify;
+    padding: 10px;
+
+  }
+
+  #go {
+            background-color: rgba(131,223,23,0.48);
+            width: 50px;
+            height: 35px;
+            display: block;
+            position: fixed;
+            right: 10px;
+            bottom: 20px;
+            font-weight: bold;
+            padding: 2px;
+            font-size: x-large;
+            border-radius: 74px;
+        }
+
+</style>
+<title>Russia</title>
+</head>
+<body>
+
+
+      <!-- NAVBAR WITH DROPDOWN -->
+
+      <nav class="navbar navbar-expand-sm navbar-dark mb-3 navbar-primary bg-dark">
+        <div class="container">  <!--div fill all theleft/right  margin space, otherwise Nav leave some space -->
+            <a class="navbar-band" href="images/logo.globe2.jpg"><img src="images/logo.globe.jpg" width="40px"></src></a>
+            <ul class="navbar-nav text-white"  >
+                <li class="nav-item">
+                    <a class="nav-link" href="./Index.html" style="color:white">Home</a>
+                </li>
+                
+                <li class="nav-item dropdown">  <!-- mix 2 classes nav-item & dropdown -->
+                  <a href="#" class="nav-link dropdow-toggle"
+                  data-toggle="dropdown" style="color:white" >Africa
+                  </a> 
+                  <div class="dropdown-menu">
+                   <a href="./Egypt.html" class="dropdown-item">Egypt</a>                           
+                  </div>
+
+                </li>
+
+                <li class="nav-item dropdown">  <!-- mix 2 classes nav-item & dropdown -->
+                  <a href="#" class="nav-link dropdow-toggle"
+                  data-toggle="dropdown" style="color:white" >Asia
+                  </a> 
+                  <div class="dropdown-menu">
+                      <a href="./India.html" class="dropdown-item">India</a>                           
+                  </div>
+
+                </li>
+                
+                <li class="nav-item dropdown">  <!-- mix 2 classes nav-item & dropdown -->
+                       <a href="#" class="nav-link dropdow-toggle"
+                       data-toggle="dropdown" style="color:white">Europe
+                       </a> 
+                       <div class="dropdown-menu">
+                        <a href="./Greece.html" class="dropdown-item">Greece</a>                           
+                        <a href="./Russia.html" class="dropdown-item">Russia</a>   
+                       </div>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./ContactUs.html" style="color:white">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="lightblue">
+
+      <h1 id="TOPTOP" >俄羅斯</h1>
+
+    </div>
+
+	
+	<div class="grid-container">
+
+	  <div class="item1" id="I001">
+      <img src="images/Russia2b.jpg" width="100%">
+
+    </div>
+
+	  <div class="item2" text-align: left>
+        <br>
+
+        <div class="info"> 
+          <h2 font-weight: bold>旅行小資訊</h2>
+          <br>
+          <a href="#history"><h3>歷史文化</h3></a>
+          <a href="#weather"><h3>天氣</h3></a>
+          <a href="#transportation"><h3>交通工具</h3></a>
+          <a href="#attractions"><h3>觀光景點</h3></a>
+          <a href="#thingstodo"><h3>活動</h3></a>
+          <a href="#gourmentfood"><h3>地道美食</h3></a>
+
+        </div>
+    </div>
+
+	  <div class="item3">
+        
+        <div class="orange">
+
+          <H3 id="history" >歷史文化</H3>
+
+          <p>
+            1263年, 莫斯科大公國建立, 1238年-1480年期間, 莫斯科被金帳汗國統治;
+            1478年最終俄國統一,國號為俄羅斯沙皇國。
+            <br>
+            聖彼得堡 St. Petersburg, 由彼得大帝在1703 年建立，後並遷都而來。
+            蘇聯時代叫列寧格勒，在二戰時期曾被納粹德軍圍城八百多天。是俄羅斯第二大城市。
+
+            </p>
+        
+        </div>
+
+        <div class="orange">
+          <H3 id="weather">天氣</H3>
+          <p>
+            莫斯科夏季舒適和多雲；冬季長、極冷、下雪、有風和陰天。 
+            全年溫度一般在 -11°C 至 24°C 的範圍内，很少低於 -22°C 或高於 30°C。
+            <br>
+            聖彼得堡7月平均高溫為23°C (73°F), 年平均溫度為5.8°C(42.4°F)
+            市區的涅瓦河通常在11月至12月凍結, 在4月解凍。
+            12月至3月間, 平均有118天會有積雪, 2月平均積雪深度達到19公分。
+            聖彼得堡無霜期持續時間平均為135天。
+          </p>
+
+        </div>
+
+        <div class="orange">
+
+          <H3 id="transportation">交通工具</H3>
+
+          <p>
+            市內地下鐵
+          </p>
+
+        </div>
+
+        <div class="orange">
+
+          <h3 id="attractions">觀光景點</h3>
+
+          <ul>
+            <li>莫斯科的洋蔥頭頂標- 聖巴索大教堂St.Basil's Cathedral   </li>
+            <li>著名的紅場   </li>
+            <li>克里姆林宮。 克里姆林宮 在1990 年列入為「世界文化遺產」，是俄羅斯最高行政地方。  </li>
+            <li>宇航博物館, 介紹俄羅斯（蘇聯）的太空發展。人類第一位上太空的是蘇聯人。</li>
+
+          </ul>
+
+        </div>
+
+        <div class="orange">
+          <h3 id="thingstodo">活動</h3>
+
+          <ul>
+              <li>觀賞芭蕾舞天鵝湖表演 </li>
+              <li>觀賞莫斯科馬戲團   </li>
+              <li>乘撘及觀賞有地下宮殿之稱的「雲石地鐵站」</li>
+          </ul>
+            
+        </div> 
+
+        <div class="orange">
+          <h3 id="gourmentfood" >地道美食</h3>
+
+            <p>  三文魚子醤pancake  </p>
+
+        </div>
+
+    </div>       
+    
+	  <div class="item4" >
+        
+          <div class="img" >
+            <a href="images/Russia8a.jpg">
+            <img src="images/Russia8b.jpg" width="100%">
+            </a>
+            <p> 岸上就是冬宮Winter Palace, 建於1721 年，是巴洛克式的沙皇皇宮, 
+              現為隱士廬博物館, Hermitage Museum,  世界三大博物館之一。
+            </p>
+
+          </div>
+          <br>
+        
+          <div class="img" >
+            <a href="images/Russia5a.jpg">
+            <img src="images/Russia5b.jpg"  width="100%">
+            </a>
+            <p> 世界聞名，有地下宮殿之稱的「雲石地鐵站」，每個都有不同設計及特色。</p>
+
+          </div>
+
+          <br>
+        
+          <div class="img" >
+              <a href="images/Russia6a.jpg">
+              <img src="images/Russia6b.jpg" width="100%">
+              </a>
+              <p>
+                芭蕾舞天鵝湖表演
+              </p>
+          </div>
+
+          <br>
+
+          <div class="img" >
+              <a href="images/Russia9a.jpg">
+              <img src="images/Russia9b.jpg" width="100%">
+              </a>
+              <p> 三文魚子醤pancake</p>
+
+          </div>
+
+        <div id="go">
+          <a href="#TOPTOP">TOP</a>
+        </div>
+      
+    </div>
+
+	  <div class="item5" style="text-align: center;" >
+
+      <p>© 2024 Copyright:All right reserved</p>
+
+    </div>
+	</div>
+	
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>
